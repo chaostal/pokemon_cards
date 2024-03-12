@@ -27,7 +27,7 @@ Now that everything is installed to your venv directory, you can start flask lik
 There are more ways to start a flask app but I thought this one is a very easy oneliner :)
 Flask should start and open a port (like 5000) on your localhost ( http://localhost:5000 ). You can visit it with a browser.
 
-And it should look somehow like this (without the font but you can get it here: https://www.dafont.com/cardinal.font )
+And it should look somehow like this (without the font but you can get it here: https://www.dafont.com/pokemon.font )
 
 ![image of the app](./screenshot_01.jpg)
 
