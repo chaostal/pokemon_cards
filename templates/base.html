@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Pokemon Karten Verwaltung</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="icon" href="/static/favicon.ico">
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    {% block content %}
+    {% endblock %}
+    <hr/>
+
+    <script src="/static/bootstrap.min.js"></script>
+    {% block footer %}
+    {% endblock %}
+  </body>
+</html>

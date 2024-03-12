@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+   <div class="container">
+    <form class="mb-4" method="POST">
+      <input class="form-control" type="text" placeholder="Name der Karte" name="name"><br/>
+      <input class="form-control" type="text" placeholder="Serie" name="serie"><br/>
+      <select class="form-select" name="typ">
+        <option value="none" selected>Typ wählen</option>
+        <option value="pflanze">Pflanze</option>
+        <option value="feuer">Feuer</option>
+        <option value="wasser">Wasser</option>
+        <option value="elektro">Elektro</option>
+        <option value="psycho">Psycho</option>
+        <option value="kampf">Kampf</option>
+        <option value="unlicht">Unlicht</option>
+        <option value="stahl">Stahl</option>
+        <option value="fee">Fee</option>
+        <option value="drache">Drache</option>
+        <option value="farblos">Farblos</option>
+      </select>
+      <br/>
+      <select class="form-select" name="seltenheit">
+        <option value="none" selected>Seltenheit wählen</option>
+        <option value="C">Common</option>
+        <option value="U">Uncommon</option>
+        <option value="R">Rare</option>
+        <option value="UR">Ultra Rare</option>
+        <option value="RR">Rainbow Rare</option>
+        <option value="SR">Secret Rare</option>
+        <option value="AR">Amazing Rare</option>
+        <option value="SR">Shiny Rare</option>
+        <option value="RPS">Rare Prism Star</option>
+        <option value="P">Promo</option>
+      </select>
+      <br/>
+      <div class="d-grid gap-2">
+        <input type="submit" class="btn btn-success btn-primary" value="Suchen...">
+      </div>
+    </form>
+   </div>
+{% endblock %}

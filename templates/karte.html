@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <form class="mb-4" method="POST">
+      <input class="form-control" type="text" placeholder="Name der Karte" name="name"><br/>
+      <select class="form-select" name="typ">
+        <option value="none" selected>Typ wählen</option>
+        <option value="pflanze">Pflanze</option>
+        <option value="feuer">Feuer</option>
+        <option value="wasser">Wasser</option>
+        <option value="elektro">Elektro</option>
+        <option value="psycho">Psycho</option>
+        <option value="kampf">Kampf</option>
+        <option value="unlicht">Unlicht</option>
+        <option value="stahl">Stahl</option>
+        <option value="fee">Fee</option>
+        <option value="drache">Drache</option>
+        <option value="farblos">Farblos</option>
+      </select>
+      <br/>
+
+      <select class="form-select" name="holo">
+        <option value="nein" selected>keine Holokarte</option>
+        <option value="holo">Holokarte</option>
+        <option value="reverseholo">Reverse-Holokarte</option>
+      </select><br/>
+
+      <select class="form-select" name="special">
+        <option value="nein" selected>keine Spcial-Karte</option>
+        <option value="v">V-Karte</option>
+        <option value="vstar">Vstar-Karte</option>
+        <option value="vmax">Vmax-Karte</option>
+        <option value="gx">GX-Karte</option>
+        <option value="ex">EX-Karte</option>
+      </select><br/>
+
+      <select class="form-select" name="schwaeche">
+        <option value="none" selected>Schwäche (Typ wählen)</option>
+        <option value="pflanze">Pflanze</option>
+        <option value="feuer">Feuer</option>
+        <option value="wasser">Wasser</option>
+        <option value="elektro">Elektro</option>
+        <option value="psycho">Psycho</option>
+        <option value="kampf">Kampf</option>
+        <option value="unlicht">Unlicht</option>
+        <option value="stahl">Stahl</option>
+        <option value="fee">Fee</option>
+        <option value="drache">Drache</option>
+        <option value="farblos">Farblos</option>
+      </select>
+      <br/>
+
+      <select class="form-select" name="resistenz">
+        <option value="none" selected>Resistenz (Typ wählen)</option>
+        <option value="pflanze">Pflanze</option>
+        <option value="feuer">Feuer</option>
+        <option value="wasser">Wasser</option>
+        <option value="elektro">Elektro</option>
+        <option value="psycho">Psycho</option>
+        <option value="kampf">Kampf</option>
+        <option value="unlicht">Unlicht</option>
+        <option value="stahl">Stahl</option>
+        <option value="fee">Fee</option>
+        <option value="drache">Drache</option>
+        <option value="farblos">Farblos</option>
+      </select>
+      <br/>
+
+      <select class="form-select" name="entwicklung">
+        <option value="basis" selected>Basis</option>
+        <option value="phase1" >Phase 1</option>
+        <option value="phase2" >Phase 2</option>
+      </select>
+      <br/>
+
+      <input class="form-control" type="number" min="0" placeholder="KP" name="kp"><br/>
+      <select class="form-select" name="seltenheit">
+        <option value="none" selected>Seltenheit wählen</option>
+        <option value="C">Common</option>
+        <option value="U">Uncommon</option>
+        <option value="R">Rare</option>
+        <option value="UR">Ultra Rare</option>
+        <option value="RR">Rainbow Rare</option>
+        <option value="SR">Secret Rare</option>
+        <option value="AR">Amazing Rare</option>
+        <option value="SR">Shiny Rare</option>
+        <option value="RPS">Rare Prism Star</option>
+        <option value="P">Promo</option>
+      </select><br/>
+
+      <input class="form-control" type="text" placeholder="Serie" name="serie"><br/>
+      <input class="form-control" type="number" min="1" placeholder="Anzahl" name="anzahl"><br/>
+
+      <select class="form-select" name="sprache">
+        <option value="none" selected>Sprache wählen</option>
+        <option value="de">deutsch</option>
+        <option value="en">englisch</option>
+      </select><br/>
+
+      <input class="form-control" type="text" placeholder="Eingebaut in Deck" name="decks"><br/>
+      <div class="d-grid gap-2">
+        <button type="submit" class="button btn-large btn btn-success">Karte Speichern</button>
+      </div>
+    </form>
+{% endblock %}
