@@ -1,0 +1,33 @@
+html {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: cardinal;
+    src: url('./pokemon_hollow.ttf');
+}
+
+.navbar-brand, #offcanvasNavbarLabel {
+    font-family: cardinal;
+    font-size: 1.8rem !important;
+}
+
+.ul-wrap {
+    //display: flex;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.header {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: 2rem;
+    padding: 1rem !important;
+    //font-size: 1rem;
+}
